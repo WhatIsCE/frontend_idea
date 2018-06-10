@@ -158,10 +158,10 @@ body {
 }
 
 @media (max-width: 48em) {
-    h1 {
+    .contents h1 {
         font-size: 1.5rem;
     }
-    h3 {
+    .contents h3 {
         font-size: 0.75rem;
     }
 }
