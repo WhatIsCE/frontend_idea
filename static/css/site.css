@@ -1,4 +1,68 @@
 /*
+ * Animation
+ */
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: inline !important;
+        opacity: 0;
+    }
+    100% {
+        display: inline !important;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: inline !important;
+        opacity: 0;
+    }
+    100% {
+        display: inline !important;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: inline !important;
+        opacity: 0;
+    }
+    100% {
+        display: inline !important;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    1% {
+        display: inline !important;
+        opacity: 0;
+    }
+    100% {
+        display: inline !important;
+        opacity: 1;
+    }
+}
+
+/*
  * Globals
  */
 
@@ -47,7 +111,7 @@ body {
 }
 
 .cover-container {
-    max-width: 42em;
+    width: 42em;
 }
 
 /*
@@ -112,4 +176,15 @@ body {
 
 .sitefoot {
     color: rgba(255, 255, 255, .5);
+}
+
+.tweet {
+    opacity: 0;
+    display: none;
+    transition: .2s;
+}
+
+.tweet.active {
+    animation: fadeInFromNone .2s ease-out forwards;
+    display: inline;
 }
